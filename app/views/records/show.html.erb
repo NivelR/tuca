@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @record.email %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= image_tag(@record.image.expiring_url(30.minutes.since, :original)) %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @record.user %>
+</p>
+
+<%= link_to 'Edit', edit_record_path(@record) %> |
+<%= link_to 'Back', records_path %>

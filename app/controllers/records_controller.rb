@@ -61,6 +61,10 @@ class RecordsController < ApplicationController
     end
   end
 
+  def image
+
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_record

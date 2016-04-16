@@ -7,7 +7,8 @@
 
 <p>
   <strong>Image:</strong>
-  <%= image_tag(@record.image.expiring_url(30.minutes.since, :original)) %>
+  <%# image_tag(@record.image.expiring_url(30.minutes.since, :original)) %>
+  <%= image_tag("#{root_url(email: @record.email)}") %>
 </p>
 
 <p>

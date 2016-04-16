@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+users = [{:email => 'contacto@comunidadtic.com.ar',:password => "clave12345", :password_confirmation => "clave12345"},
+		 {:email => 'nivelr@comunidadtic.com.ar',:password => "clave12345", :password_confirmation => "clave12345"}	
+  	 ]
+
+users.each do |user|
+   User.create!(user)
+end

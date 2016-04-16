@@ -21,4 +21,8 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* .ENV: crear un archivo .env con los siguientes datos:
+AZURE_ACCOUNT=""
+AZURE_KEY=""
+AZURE_CONTAINER_NAME=""
+SECRET_KEY_BASE=""

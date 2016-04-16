@@ -55,7 +55,7 @@ gem 'azure', '0.7.3'
 
 gem 'paperclip'
 
-gem 'paperclip-azure'
+gem 'paperclip-azure', github: 'NivelR/paperclip-azure', branch: 'master'
 
 gem 'devise', github: 'plataformatec/devise', branch: 'master'
 

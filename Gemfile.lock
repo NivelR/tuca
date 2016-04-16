@@ -1,4 +1,14 @@
 GIT
+  remote: git://github.com/NivelR/paperclip-azure.git
+  revision: 22aee2f1bb0a4c6450ccbfe2af238da8644780d0
+  branch: master
+  specs:
+    paperclip-azure (0.3.0)
+      addressable
+      azure
+      hashie
+
+GIT
   remote: git://github.com/plataformatec/devise.git
   revision: 57d150e535f65c9b408504fa6f279a5417fa3de5
   branch: master
@@ -134,10 +144,6 @@ GEM
       cocaine (~> 0.5.5)
       mime-types
       mimemagic (= 0.3.0)
-    paperclip-azure (0.3.0)
-      addressable
-      azure
-      hashie
     pry (0.10.3)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -237,7 +243,7 @@ DEPENDENCIES
   jquery-rails
   listen (~> 3.0.5)
   paperclip
-  paperclip-azure
+  paperclip-azure!
   pry
   puma
   rails (>= 5.0.0.beta3, < 5.1)

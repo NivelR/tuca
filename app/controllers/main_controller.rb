@@ -5,8 +5,7 @@ class MainController < ApplicationController
   	# end
     @record = Record.find_by(email: params[:email])
 
-    #redirect_to project_notifications_url
-
+    if @record
     # redirect_to  record_path @record if @record
     data = open(@record.image.expiring_url(30.minutes.since, :original)) { |f| f.read }
     # binding.pry
@@ -14,6 +13,7 @@ class MainController < ApplicationController
       data,
       type: "image/jpg"
     )
+    end
     
   end
 
